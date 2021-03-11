@@ -1,2 +1,3 @@
 # wordpress_practice_nakashima
-WordPress　仕事の現場でサッと使える! デザイン教科書
+WordPress　仕事の現場でサッと使える! デザイン教科書の作業ディレクトリ
+ローカル環境はdockerで構築
