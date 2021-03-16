@@ -12,15 +12,15 @@
 	<script src="<?php echo get_template_directory_uri(); ?>/assets/js/main.js"></script>
 </head>
 
-<body>
+<body <?php body_class(); ?>>
 	<header class="header">
 		<div class="header_inner">
 			<div class="header_logo">
-				<h1><a href="/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/logo@2x.png" alt="BISTRO CALME"></a></h1>
+				<h1><a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/logo@2x.png" alt="BISTRO CALME"></a></h1>
 			</div>
 
 			<div class="header_desc">
-				<p>サイトのキャッチフレーズ</p>
+				<p><?php bloginfo('description') ?></p>
 			</div>
 
 			<form class="header_search">
