@@ -1,6 +1,8 @@
 <?php get_header(); ?>
 	<h2 class="pageTitle">最新情報<span>NEWS</span></h2>
 
+	<?php get_template_part('template-parts/breadcrumb'); ?>
+
 	<main class="main">
 		<div class="container">
 			<div class="row">
@@ -21,6 +23,8 @@
 						<? endif; ?>
 
 					</div>
+
+					<?php if ( function_exists( 'wp_pagenavi' ) ) { wp_pagenavi(); } ?>
 				</div>
 
 				<div class="col-12 col-md-3">

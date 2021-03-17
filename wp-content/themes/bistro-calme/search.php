@@ -2,6 +2,8 @@
 
 <h2 class="pageTitle">サイト内検索<span>SEARCH</span></h2>
 
+<?php get_template_part('template-parts/breadcrumb'); ?>
+
 <main class="main">
     <div class="container">
         <h2 class="main_title">「<?php the_search_query(); ?>」の検索結果</h2>
@@ -20,6 +22,8 @@
             <?php endif; ?>
 
         </div>
+
+        <?php if ( function_exists( 'wp_pagenavi' ) ) { wp_pagenavi(); } ?>
     </div>
 </main>
 
