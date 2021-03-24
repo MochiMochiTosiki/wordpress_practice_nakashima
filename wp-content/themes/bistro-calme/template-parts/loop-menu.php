@@ -8,7 +8,7 @@
             <?php endif; ?>
         </figure>
         <h3 class="menu_title">メニュー名が入ります</h3>
-        <p class="menu_price">800円</p>
+        <p class="menu_price"><?php the_field('price'); ?></p>
         <div class="menu_desc">
             <?php the_excerpt(); ?>
         </div>
