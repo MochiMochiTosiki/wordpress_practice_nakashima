@@ -1,14 +1,16 @@
 <section class="menu">
-    <a href="#">
+    <a href="<?php the_permalink(); ?>">
         <figure class="menu_pic">
-            <img src="./assets/img/menu/menu-10@2x.jpg" alt="">
+            <?php if ( has_post_thumbnail() ): ?>
+                <?php the_post_thumbnail('medium'); ?>
+            <?php else: ?>
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/noimage_600x400.png" alt="">
+            <?php endif; ?>
         </figure>
         <h3 class="menu_title">メニュー名が入ります</h3>
         <p class="menu_price">800円</p>
         <div class="menu_desc">
-            <p>
-                概要が入ります。概要が入ります。概要が入ります。概要が入ります。
-            </p>
+            <?php the_excerpt(); ?>
         </div>
     </a>
 </section>
